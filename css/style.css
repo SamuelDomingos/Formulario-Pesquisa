@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    background-image: linear-gradient(rgba(43, 43, 43, 0.8), rgba(31, 31, 31, 0.8) ), url("../imagens/background.jpeg");
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*RESPONSIVEL*/
+    @media screen and (max-width: 420px){
+        .top-title{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+       body form{
+            padding: 10px;
+            margin: 40px 0;
+        }
+    }
+
+
+
+.top-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.top-title h2{
+    font-size: 30px;
+}
+
+form{
+    margin: 40px auto;
+    border-radius: 0.25%;
+    width: 50%;
+    min-width: 420px;
+    padding: 50px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group{
+    margin-bottom: 40px;
+}
+
+.form-group input, select{
+    padding-left: 20px;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 0.25em;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+}
+
+
+.form-group h2, .form-group label{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form-group span{
+    font-size: 12px;
+}
+
+.form-group label{
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.form-radio input[type = radio], .form-group input[type = checkbox]{
+    margin-right: 10px;
+    cursor: pointer;
+    width: 21px;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+    outline: 0;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+}
+
+.form-group textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 130px;
+    border-radius: 1%;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.form-group input[type = submit]{
+    width: 100%;
+    height: 50px;
+    background-color: #37af65;
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.form-group input[type = submit]:hover{
+    background-color: #42c072;
+    color: black;
+}

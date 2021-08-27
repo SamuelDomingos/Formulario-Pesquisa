@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!--font-family: 'Open Sans', sans-serif;-->
+
+    <title>Aula#2</title>
+
+</head>
+<body>
+    <div class="top-title">
+        <h2>Formulário de pesquisa para Programadores</h2>
+        <h3>Obrigado por nos ajudar a melhorar a plataforma</h3>
+    </div><!--TOP-TITLE-->
+
+    <form>
+
+        <div class="form-group">
+            <h2>Nome</h2>
+            <input required type="text" name="nome" placeholder="DIGITE SEU NOME">
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+            <h2>E-mail</h2>
+            <input required type="text" name="E-mail" placeholder="DIGITE SEU E-MAIL">
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+            <h2>Idade (opcional)</h2>
+            <input type="number" name="Idade" id="number"
+             placeholder="IDADE" min="15" max="100">
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+            <h2>Qual opção descreve melhor sua função atual?</h2>
+            <select required name="funções" id="">
+                <option selected disabled>selecione a função atual</option>
+                <option value="Estudante">Estudante</option>
+                <option value="Trabalho">TRABALHO em tempo integral</option>
+                <option value="Aprendiz">APRENDIZ em tempo integral</option>
+                <option value="Não dizer">Prefiro não dizer</option>
+                <option value="outros">outros</option>
+            </select>
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group form-radio">
+
+            <h2>Você recomendaria Lorem Ipsum a um amigo?</h2>
+            <label><input type="radio" name="command-radio" value="com certeza" >com certeza</label>
+            
+            <label><input type="radio" name="command-radio" value="pode ser" >pode ser</label>
+            
+            <label><input type="radio" name="command-radio" value="não tenho certeza" >não tenho certeza</label>
+
+        </div><!--FORM-GROUP-->
+
+
+        <div class="form-group">
+            <h2>Qual é o seu recurso favorito do Lorem Ipsum?</h2>
+            <select name="recurso_favoritos">
+                <option selected disabled>selecione uma opção</option>
+                <option value="desafios">desafios</option>
+                <option value="projetos">Projetos</option>
+                <option value="comunidade">comunidade</option>
+                <option value="código aberto">Código aberto</option>
+            </select>
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+
+            <h2>O que você gostaria de ver melhorado? <span>(Marque todas as opções aplicáveis)</span></h2>
+            
+            <label><input type="checkbox" name="performance" id="melhorias1" value="Front-end_Projetos">
+            Front-end Projetos</label>
+
+            <label><input type="checkbox" name="performance" id="melhorias2" value="Back-end_Projetos">
+            Back-end Projetos</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias3" value="Visualização_de_dados">
+            Visualização de dados</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias4" value="Desafios">
+            Desafios</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias5" value="Comunidade_de_código_aberto">
+            Comunidade de código aberto</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias6" value="quartos_de_ajuda_do_gitter">
+            Quartos de ajuda do gitter</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias7" value="Videos">
+            Videos</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias8" value="Encontros_na_cidade">
+            Encontros na cidade</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias9" value="Wiki">
+            Wiki</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias10" value="Forum">
+            Forum</label>
+
+            <label><input type="checkbox" name="performance"  id="melhorias11" value="Adicionar_recurso">
+            Adicionar recurso</label>
+
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+
+            <h2>Algum comentário ou sugestão?</h2>
+
+           <textarea name="sugestão" id="sugestão" placeholder="insira seu comentário aqui ..."></textarea>
+
+        </div><!--FORM-GROUP-->
+
+        <div class="form-group">
+
+            <input type="submit" value="Enviar">
+
+        </div><!--FORM-GROUP-->
+
+    </form>
+
+</body>
+</html>
